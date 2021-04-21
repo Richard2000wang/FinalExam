@@ -2,22 +2,42 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+nav {
+    grid-area: N;
+    display: flex;
+    background-color: #05445E;
+    padding: 1rem 2rem;
+    place-content: center;
+    height: 1rem;
+    width: 100vw;
 }
 
 body {
-    background-color: #C0C0C0;
-    color: #DCDCDC;
+    background-color: #189AB4;
+    color: #D4F1F4;
     display: grid;
     grid-template-areas:
+    "N"
     "H"
     "B"
     "F"
 }
 
+h1 {
+    font-family: 'Indie Flower', cursive;
+    background-color: #05445E;
+    font-size:30px;
+    text-align: center;
+    min-height: 30px;
+    width:100vw;
+}
 
 .foot {
     display: flex;
-    background-color: #2F4F4F;
+    background-color: #05445E;
     grid-area: F;
     width: 100vw;
     height: 80px;
@@ -25,9 +45,37 @@ body {
 }
 
 .font {
-    color: #DCDCDC;
+    color: #D4F1F4;
     margin-left: auto;
     margin-right: auto;
     font-size: 30px;
     width: auto;
 }
+
+.modal {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .modal .box {
+    background: #f4f4f4;
+    color: #75E6DA;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .modal .box button {
+    margin-top: 1rem;
+  }
+  .modal.hidden {
+    display: none;
+  }
+  
