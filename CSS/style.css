@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #C0C0C0;
+    color: #DCDCDC;
+    display: grid;
+    grid-template-areas:
+    "H"
+    "B"
+    "F"
+}
+
+
+.foot {
+    display: flex;
+    background-color: #2F4F4F;
+    grid-area: F;
+    width: 100vw;
+    height: 80px;
+    align-items: center;
+}
+
+.font {
+    color: #DCDCDC;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    width: auto;
+}
