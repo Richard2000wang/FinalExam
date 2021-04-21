@@ -11,7 +11,6 @@ nav {
     background-color: #05445E;
     padding: 1rem 2rem;
     place-content: center;
-    height: 1rem;
     width: 100vw;
 }
 
@@ -20,10 +19,15 @@ body {
     color: #D4F1F4;
     display: grid;
     grid-template-areas:
-    "N"
-    "H"
-    "B"
-    "F"
+    "N N"
+    "H H"
+    "B B"
+    "C C"
+    "F F"
+}
+
+main {
+    grid-area:B;
 }
 
 h1 {
@@ -31,8 +35,8 @@ h1 {
     background-color: #05445E;
     font-size:30px;
     text-align: center;
-    min-height: 30px;
     width:100vw;
+    grid-area:H;
 }
 
 .cart-content {
@@ -94,5 +98,12 @@ h1 {
 }
 .modal.hidden {
     display: none;
+  }
+
+
+@media screen and (min-width:650px){
+    body{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
-  
